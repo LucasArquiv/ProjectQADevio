@@ -39,9 +39,9 @@ public class FormsTest extends BaseTest {
         forms.setEmail();
         forms.setCPF();
         forms.setTelefone("(11) 94802-9822");
-        forms.setCEP();
+        forms.setCEP("078-55357");
         forms.setRua("Rua Nogueira");
-        forms.setNumero();
+        forms.setNumero("1500");
         forms.setComplemento("estádio Allianz Parque");
         forms.setBairro("Santa agustina");
         forms.setCidade("São Paulo");
@@ -65,9 +65,9 @@ public class FormsTest extends BaseTest {
         forms.setEmail();
         forms.setCPF();
         forms.setTelefone("(11) 92578-4525");
-        forms.setCEP();
+        forms.setCEP("075-33450");
         forms.setRua("Rua Nogueira");
-        forms.setNumero();
+        forms.setNumero("850");
         forms.setComplemento("estádio Allianz Parque");
         forms.setBairro("Santa agustina");
         forms.setCidade("São Paulo");
@@ -88,9 +88,9 @@ public class FormsTest extends BaseTest {
         forms.setEmailManual("lucas@hotmail.com");
         forms.setCPFManual("445.938.745-63");
         forms.setTelefone("(11) 92578-4525");
-        forms.setCEPManual("07855-250");
+        forms.setCEP("07855-250");
         forms.setRua("Rua Nogueira");
-        forms.setNumero();
+        forms.setNumero("500");
         forms.setComplemento("estádio Allianz Parque");
         forms.setBairro("Santa agustina");
         forms.setCidade("São Paulo");
@@ -103,9 +103,9 @@ public class FormsTest extends BaseTest {
         forms.setEmailManual("lucas@hotmail.com");
         forms.setCPFManual("445.938.745-63");
         forms.setTelefone("(11) 92578-4525");
-        forms.setCEPManual("07855-250");
+        forms.setCEP("07855-250");
         forms.setRua("Rua Nogueira");
-        forms.setNumero();
+        forms.setNumero("500");
         forms.setComplemento("estádio Allianz Parque");
         forms.setBairro("Santa agustina");
         forms.setCidade("São Paulo");

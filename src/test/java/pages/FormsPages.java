@@ -23,7 +23,6 @@ public class FormsPages extends BasePage {
         escreve(Prinome, (nome));
     }
 
-    //--------------------------------------------------------------------------------------------
     public void setEmail() {
         getDriver().findElement(email).sendKeys(Utils.getRamdomEmail());
     }
@@ -31,7 +30,6 @@ public class FormsPages extends BasePage {
     public void setEmailManual(String emailManual) {
         getDriver().findElement(email).sendKeys(emailManual);
     }
-    //--------------------------------------------------------------------------------------------------
 
     public void setCPF() {
         getDriver().findElement(doc).sendKeys(Utils.NumerosCPFAleatorio());
@@ -40,28 +38,21 @@ public class FormsPages extends BasePage {
     public void setCPFManual(String cpfManual) {
         getDriver().findElement(doc).sendKeys(cpfManual);
     }
-    //------------------------------------------------------------------------------------------------------
 
     public void setTelefone(String telefone) {
         escreve(By.xpath("//input[@placeholder='(00) 00000-0000']"), telefone);
     }
 
-    //---------------------------------------------------------------------------------------------------
-    public void setCEP() {
-        getDriver().findElement(cep).sendKeys(Utils.NumerosCEPAleatorio());
-    }
-
-    public void setCEPManual(String cepManual) {
+    public void setCEP(String cepManual) {
         getDriver().findElement(cep).sendKeys(cepManual);
     }
-    //-----------------------------------------------------------------------------------------------------------
 
     public void setRua(String rua) {
         escreve(By.xpath("//input[@placeholder='Nome da rua']"), rua);
     }
 
-    public void setNumero() {
-        getDriver().findElement(numbCasa).sendKeys(Utils.NumerosCasaAleatorio());
+    public void setNumero(String numb) {
+        getDriver().findElement(numbCasa).sendKeys(numb);
     }
 
     public void setComplemento(String complemento) {
@@ -79,7 +70,7 @@ public class FormsPages extends BasePage {
     }
 
     public void setEstado(String estado) {
-        clicarBotao(new By.ByXPath("//div[contains(@class, 'line-between')]"));
+        clicarBotao(new By.ByXPath("//*[contains(@stroke,'currentColor')]"));
         selecionaCombo("option-0", estado);
     }
 

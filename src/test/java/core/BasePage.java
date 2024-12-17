@@ -61,8 +61,7 @@ public class BasePage {
         dropdown.click();
 
         // Localizar o item pelo texto visível e clicar nele
-        WebElement option = getDriver().findElement(By.xpath("//div[contains(text(),'" + valor + "')]"));
-        option.click();
+        getDriver().findElement(By.xpath("//div[contains(text(),'" + valor + "')]")).click();
     }
 
 

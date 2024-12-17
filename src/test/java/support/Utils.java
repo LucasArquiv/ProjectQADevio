@@ -17,39 +17,9 @@ public class Utils {
         return email_init + resultado + email_final;
     }
 
-
     public static String NumerosCPFAleatorio() {
         //Gerando 5 números aleatórios
         int qtMaximoNumeros = 11;
-        String[] Numeros = {"0", "1", "2", "3", "4", "5", "6", "7", "8",
-                "9"};
-
-        StringBuilder numero = new StringBuilder();
-
-        for (int i = 0; i < qtMaximoNumeros; i++) {
-            int posicao = (int) (Math.random() * Numeros.length);
-            numero.append(Numeros[posicao]);
-        }
-        return numero.toString();
-    }
-
-    public static String NumerosCasaAleatorio() {
-        //Gerando 5 números aleatórios
-        int qtMaximoNumeros = 5;
-        String[] Numeros = {"0", "1", "2", "3", "4", "5", "6", "7", "8",
-                "9"};
-
-        StringBuilder numero = new StringBuilder();
-
-        for (int i = 0; i < qtMaximoNumeros; i++) {
-            int posicao = (int) (Math.random() * Numeros.length);
-            numero.append(Numeros[posicao]);
-        }
-        return numero.toString();
-    }
-    public static String NumerosCEPAleatorio() {
-        //Gerando 5 números aleatórios
-        int qtMaximoNumeros = 8;
         String[] Numeros = {"0", "1", "2", "3", "4", "5", "6", "7", "8",
                 "9"};
 
